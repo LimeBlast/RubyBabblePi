@@ -12,4 +12,6 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV["ACCESS_SECRET"]
 end
 
-#puts client.update("I'm tweeting with Ruby")
+client.mentions.each do |tweet|
+  puts "#{tweet.text} (@#{tweet.user.screen_name})"
+end
