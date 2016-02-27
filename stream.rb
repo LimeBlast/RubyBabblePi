@@ -20,6 +20,11 @@ client.user do |object|
       tweet.user_mentions.each do |mention|
         if mention.screen_name == 'BabblePi'
           puts tweet.text
+          text = tweet.text.gsub("'"){"\\'"}
+          puts text
+          system <<TWEET
+sudo ./scroller.py '#{text}'
+TWEET
         end
       end
     end
