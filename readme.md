@@ -1,4 +1,4 @@
-# BabblePi in Ruby (which a little bit of Python magic)
+# BabblePi in Ruby (with a little bit of Python magic)
 
 This project uses a Raspberry Pi to display mentions sent to the @BabblePi twitter account
 across the dot matrix LED display of the UnicornHAT.
